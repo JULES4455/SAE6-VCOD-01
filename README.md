@@ -48,6 +48,13 @@ Data Visualization : connect Power BI to PostgreSQL, build interactive dashboard
   - `sys`
   - `collections`
   - `re`
+- **List of steps to follow to run our project**
+
+  - Extract the ZIP file containing our portable PostgreSQL database.
+  - In the extracted folder, run the batch file named `PostgreSQL-Start.bat` to start the server.
+  - If you need to refresh the data (e.g., because there is a new tournament or expansion), run `main.py` in the `data_collection` folder.
+  - To perform the transformation, run `main.py` in the `data_transformation` folder.
+  - Once all of the above steps are complete, open the Power BI project.
 
 
 ---
