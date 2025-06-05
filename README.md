@@ -63,3 +63,11 @@ Data Visualization : connect Power BI to PostgreSQL, build interactive dashboard
 
 Contains:
 - The Power BI file with a dashboard (`.pbix`)
+
+
+## Members of the team
+
+-Willia BELLON
+-Jules BOIZIAU
+-Simon JEHENNE-COUSTY
+-Guillaume REAULT
