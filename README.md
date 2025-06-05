@@ -16,10 +16,15 @@ Data Visualization : connect Power BI to PostgreSQL, build interactive dashboard
 ## Data Collection
 
 - **`main.py`**: Scrapes Limitless TCG HTML and exports one JSON per tournament under `data_collection/output/`.
-- **`requirements.txt`**: Lists the following dependencies:
+- **`Lists the following dependencies`**: 
   - `beautifulsoup4`
   - `aiohttp`
+  - `dataclasses`
   - `aiofile`
+  - `asyncio`
+  - `os`
+  - `json`
+  - `re`
 
 ---
 
@@ -27,7 +32,7 @@ Data Visualization : connect Power BI to PostgreSQL, build interactive dashboard
 
 - **`main.py`**: 
   - Reads every JSON file in `../data_collection/output/`
-  - Anonymizes player IDs
+  - Anonymizes player IDs  
   - Computes intermediate tables (working tables, deduplicated card metadata, deck summaries)
   - Writes four final tables into PostgreSQL:
     - `public.wrk_tournaments`
@@ -35,15 +40,19 @@ Data Visualization : connect Power BI to PostgreSQL, build interactive dashboard
     - `public.all_pokemon_cards`
     - `public.deck_summary`
 
-- **`requirements.txt`**: Lists the following dependency:
-  - `psycopg[binary]`
+- **` Lists the following dependency`**: 
+  - `psycopg`
+  - `os`
+  - `json`
+  - `datetime`
+  - `sys`
+  - `collections`
+  - `re`
 
-- **`sql/schema.sql`**: DDL that drops and recreates tables exactly as the Python script expects.
 
 ---
 
 ## Powerbi Dashboard
 
 Contains:
-- An optional Power BI Desktop file (`.pbix`)
-- A guide on how to connect it to your PostgreSQL instance
+- The Power BI file with a dashboard (`.pbix`)
